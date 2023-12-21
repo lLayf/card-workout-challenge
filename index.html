@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardWorkout Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main">
+        <!-- Modal for setting up exercises -->
+        <section class="main__modal modal" id="modal">
+            <div class="modal__content">
+                <h2 class="modal__title">Entrez un exercice pour chaques symboles</h2>
+                <form class="modal__form" id="suitTextForm">
+                    <label class="form__label" for="textForSpades">Exercice pour Pique :</label>
+                    <input class="form__input" type="text" id="textForSpades" required>
+                    <label class="form__label" for="textForClubs">Exercice pour Trèfle :</label>
+                    <input class="form__input" type="text" id="textForClubs" required>
+                    <label class="form__label" for="textForHearts">Exercice pour Coeur :</label>
+                    <input class="form__input" type="text" id="textForHearts" required>
+                    <label class="form__label" for="textForDiamonds">Exercice pour Carreau :</label>
+                    <input class="form__input" type="text" id="textForDiamonds" required>
+                    <button class="form__button" type="submit">Commencer le jeu</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Card deck section -->
+        <section class="main__card-deck card-deck">
+            <div class="card-deck__card card" id="deck">
+                <div class="card__back"></div>
+            </div>
+            <div class="card-deck__suit-text" id="suit-text"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
